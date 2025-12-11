@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Steklo Interior</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="font-bold text-2xl tracking-tighter text-slate-900">STEKLO<span class="text-blue-600">INTERIOR</span></a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="partitions.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20">Перегородки</a>
+                    <a href="doors.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20">Двери</a>
+                    <a href="portfolio.html" class="text-blue-600 font-medium inline-flex items-center h-20 border-b-2 border-blue-600">Портфолио</a>
+                </nav>
+                <div class="hidden md:flex items-center"><a href="#" class="bg-slate-900 text-white px-5 py-2.5 rounded-md font-bold text-sm">Рассчитать</a></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="pt-32 pb-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold text-slate-900 mb-4">Реализованные проекты</h1>
+            <p class="text-gray-500 max-w-2xl mx-auto">Более 5000 м² остекления за последний год. Работаем с ведущими архитектурными бюро и генподрядчиками.</p>
+            
+            <div class="flex justify-center gap-4 mt-8 overflow-x-auto pb-4">
+                <button class="px-6 py-2 bg-slate-900 text-white rounded-full text-sm font-bold whitespace-nowrap">Все проекты</button>
+                <button class="px-6 py-2 bg-gray-100 text-gray-600 hover:bg-gray-200 rounded-full text-sm font-bold whitespace-nowrap">Офисы</button>
+                <button class="px-6 py-2 bg-gray-100 text-gray-600 hover:bg-gray-200 rounded-full text-sm font-bold whitespace-nowrap">Торговые центры</button>
+                <button class="px-6 py-2 bg-gray-100 text-gray-600 hover:bg-gray-200 rounded-full text-sm font-bold whitespace-nowrap">Жилые комплексы</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-xl h-80 mb-4">
+                    <img src="img/hero-bg.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition"></div>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition">Штаб-квартира IT-компании</h3>
+                <p class="text-sm text-gray-500 mb-1">Москва-Сити, Башня Федерация</p>
+                <div class="flex gap-2 text-xs font-bold text-slate-400">
+                    <span class="bg-gray-100 px-2 py-1 rounded">Twin 40dB</span>
+                    <span class="bg-gray-100 px-2 py-1 rounded">450 м²</span>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-xl h-80 mb-4">
+                    <img src="img/partitions.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition"></div>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition">Коворкинг "Atmosphere"</h3>
+                <p class="text-sm text-gray-500 mb-1">БЦ "Белая Площадь"</p>
+                <div class="flex gap-2 text-xs font-bold text-slate-400">
+                    <span class="bg-gray-100 px-2 py-1 rounded">Loft Factory</span>
+                    <span class="bg-gray-100 px-2 py-1 rounded">210 м²</span>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-xl h-80 mb-4">
+                    <img src="img/doors-slim.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition"></div>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition">Апарт-отель "Level"</h3>
+                <p class="text-sm text-gray-500 mb-1">Павелецкая набережная</p>
+                <div class="flex gap-2 text-xs font-bold text-slate-400">
+                    <span class="bg-gray-100 px-2 py-1 rounded">Двери Slim</span>
+                    <span class="bg-gray-100 px-2 py-1 rounded">120 шт</span>
+                </div>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-xl h-80 mb-4">
+                    <img src="img/ceilings.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition"></div>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition">ТЦ "Европейский" (Фудмолл)</h3>
+                <p class="text-sm text-gray-500 mb-1">Площадь Киевского вокзала</p>
+                <div class="flex gap-2 text-xs font-bold text-slate-400">
+                    <span class="bg-gray-100 px-2 py-1 rounded">Потолок Рейка</span>
+                    <span class="bg-gray-100 px-2 py-1 rounded">1500 м²</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="X-BZT7SVD9BZ6U9MYioBG";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+</body>
+</html>
