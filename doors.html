@@ -1,17 +1,68 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Дверные Системы | Steklo Interior</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .overlay { background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%); }
-    </style>
-</head>
+<header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer group">
+                    <span class="font-bold text-2xl tracking-tighter text-slate-900 group-hover:text-blue-600 transition">STEKLO<span class="text-blue-600 group-hover:text-slate-900 transition">INTERIOR</span></span>
+                </a>
+
+                <nav class="hidden md:flex space-x-8">
+                    
+                    <div class="relative group">
+                        <button class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20 border-b-2 border-transparent hover:border-blue-600 transition">
+                            Продукция <i class="fa-solid fa-chevron-down text-[10px] ml-1.5 opacity-50"></i>
+                        </button>
+                        <div class="absolute left-0 top-20 w-[700px] bg-white border border-gray-100 shadow-2xl rounded-b-xl hidden group-hover:grid grid-cols-3 p-6 gap-6 z-50">
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2 uppercase text-xs tracking-wider border-b pb-2">Перегородки</h4>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li><a href="partitions.html" class="hover:text-blue-600 block py-1">Офисные (Twin/Single)</a></li>
+                                    <li><a href="partitions.html" class="hover:text-blue-600 block py-1">Лофт системы</a></li>
+                                    <li><a href="partitions.html" class="hover:text-blue-600 block py-1">Противопожарные</a></li>
+                                    <li><a href="partitions.html" class="hover:text-blue-600 block py-1">Раздвижные</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2 uppercase text-xs tracking-wider border-b pb-2">Двери</h4>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li><a href="doors.html" class="hover:text-blue-600 block py-1">Скрытые (Slim/Stels)</a></li>
+                                    <li><a href="doors.html" class="hover:text-blue-600 block py-1">Маятниковые</a></li>
+                                    <li><a href="doors.html" class="hover:text-blue-600 block py-1">В алюминии</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2 uppercase text-xs tracking-wider border-b pb-2">Интерьер</h4>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li><a href="ceilings.html" class="hover:text-blue-600 block py-1">Потолки (Грильято)</a></li>
+                                    <li><a href="mirrors.html" class="hover:text-blue-600 block py-1">Зеркала и Панно</a></li>
+                                    <li><a href="railings.html" class="hover:text-blue-600 block py-1">Ограждения</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="services.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20 border-b-2 border-transparent hover:border-blue-600 transition">Услуги</a>
+                    <a href="portfolio.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20 border-b-2 border-transparent hover:border-blue-600 transition">Портфолио</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20 border-b-2 border-transparent hover:border-blue-600 transition">О компании</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20 border-b-2 border-transparent hover:border-blue-600 transition">Блог</a>
+                    <a href="contacts.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20 border-b-2 border-transparent hover:border-blue-600 transition">Контакты</a>
+                </nav>
+
+                <div class="hidden md:flex items-center">
+                    <a href="contacts.html" class="bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-md font-medium text-sm transition shadow-lg transform hover:-translate-y-0.5">
+                        Рассчитать проект
+                    </a>
+                </div>
+                
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-600 hover:text-gray-900 focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
 <body class="bg-gray-50 text-gray-900">
 
     <header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
