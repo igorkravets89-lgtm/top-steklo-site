@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Steklo Interior</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-white text-slate-900">
+
+    <header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="font-bold text-2xl tracking-tighter text-slate-900">STEKLO<span class="text-blue-600">INTERIOR</span></a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="partitions.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20">Перегородки</a>
+                    <a href="doors.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20">Двери</a>
+                    <a href="services.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20">Услуги</a>
+                    <a href="contacts.html" class="text-blue-600 font-medium inline-flex items-center h-20 border-b-2 border-blue-600">Контакты</a>
+                </nav>
+                <div class="hidden md:flex items-center"><a href="#" class="bg-slate-900 text-white px-5 py-2.5 rounded-md font-bold text-sm">Рассчитать</a></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            <div>
+                <h1 class="text-4xl font-bold text-slate-900 mb-8">Контакты офиса и производства</h1>
+                
+                <div class="space-y-8">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mr-4 flex-shrink-0">
+                            <i class="fa-solid fa-location-dot text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Офис продаж</h4>
+                            <p class="text-gray-600">Москва, ул. Примерная, д. 10, БЦ "Панорама", офис 405</p>
+                            <p class="text-sm text-gray-400 mt-1">Пн-Пт: 09:00 - 19:00</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mr-4 flex-shrink-0">
+                            <i class="fa-solid fa-phone text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Телефон</h4>
+                            <p class="text-gray-600 text-xl font-bold">+7 (495) 000-00-00</p>
+                            <p class="text-gray-600 text-sm">Отдел по работе с архитекторами: доб. 102</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mr-4 flex-shrink-0">
+                            <i class="fa-solid fa-envelope text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Email</h4>
+                            <p class="text-gray-600">info@steklo-interior.ru</p>
+                            <p class="text-gray-600">partners@steklo-interior.ru (для поставщиков)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 bg-gray-50 p-6 rounded-xl border border-gray-200">
+                    <h4 class="font-bold text-slate-900 mb-4">Реквизиты для договоров</h4>
+                    <p class="text-sm text-gray-600 font-mono leading-relaxed">
+                        ООО "Стекло Интерьер"<br>
+                        ИНН: 7700000000 / КПП: 770101001<br>
+                        ОГРН: 1157700000000<br>
+                        Банк: ПАО Сбербанк г. Москва
+                    </p>
+                    <button class="mt-4 text-blue-600 text-sm font-bold hover:underline">Скачать карту партнера (PDF)</button>
+                </div>
+            </div>
+
+            <div class="bg-gray-200 rounded-2xl h-full min-h-[400px] relative overflow-hidden">
+                <div class="absolute inset-0 flex items-center justify-center text-gray-500">
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=37.617635%2C55.755814&z=12" width="100%" height="100%" frameborder="0" allowfullscreen="true"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-white py-10 text-center text-sm"><p>&copy; 2025 Steklo Interior.</p></footer>
+
+    <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="X-BZT7SVD9BZ6U9MYioBG";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+</body>
+</html>
