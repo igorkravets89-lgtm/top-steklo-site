@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании | Steklo Interior</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>body { font-family: 'Inter', sans-serif; } .overlay { background: linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 100%); }</style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="font-bold text-2xl tracking-tighter text-slate-900">STEKLO<span class="text-blue-600">INTERIOR</span></a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="partitions.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20">Перегородки</a>
+                    <a href="doors.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20">Двери</a>
+                    <a href="about.html" class="text-blue-600 font-medium inline-flex items-center h-20 border-b-2 border-blue-600">О компании</a>
+                    <a href="contacts.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20">Контакты</a>
+                </nav>
+                <div class="hidden md:flex items-center"><a href="contacts.html" class="bg-slate-900 text-white px-5 py-2.5 rounded-md font-bold text-sm">Рассчитать</a></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative h-[50vh] flex items-center bg-slate-900">
+        <div class="absolute inset-0 z-0">
+            <img src="img/hero-bg.jpg" alt="Производство" class="w-full h-full object-cover opacity-50">
+            <div class="absolute inset-0 overlay"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 w-full pt-10">
+            <nav class="text-sm text-gray-400 mb-4"><a href="index.html" class="hover:text-white">Главная</a> / <span class="text-white">О компании</span></nav>
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Инженерный подход <br> <span class="text-blue-500">к каждому стеклу</span></h1>
+            <p class="text-xl text-gray-200 max-w-2xl font-light">Собственный цех 1500 м², конструкторское бюро и 12 монтажных бригад.</p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div><p class="text-4xl font-bold text-blue-600">12</p><p class="text-gray-500">Лет на рынке</p></div>
+            <div><p class="text-4xl font-bold text-blue-600">5000+</p><p class="text-gray-500">Сданных объектов</p></div>
+            <div><p class="text-4xl font-bold text-blue-600">45</p><p class="text-gray-500">Сотрудников</p></div>
+            <div><p class="text-4xl font-bold text-blue-600">24/7</p><p class="text-gray-500">Поддержка</p></div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-slate-900 mb-6">Почему нам доверяют генподрядчики</h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">01</div>
+                        <div>
+                            <h4 class="font-bold">Честная смета</h4>
+                            <p class="text-sm text-gray-600">Фиксируем цену в договоре. Никаких доплат в процессе монтажа.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">02</div>
+                        <div>
+                            <h4 class="font-bold">Собственное оборудование</h4>
+                            <p class="text-sm text-gray-600">Станки для резки, полировки и закалки стекла. Мы не зависим от посредников.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">03</div>
+                        <div>
+                            <h4 class="font-bold">Документы в порядке</h4>
+                            <p class="text-sm text-gray-600">Предоставляем исполнительную документацию, сертификаты на стекло и фурнитуру (КС-2, КС-3).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 class="font-bold text-xl mb-6">Наши клиенты</h3>
+                <div class="grid grid-cols-2 gap-6 opacity-60">
+                    <div class="bg-gray-100 h-16 flex items-center justify-center font-bold">СБЕР</div>
+                    <div class="bg-gray-100 h-16 flex items-center justify-center font-bold">ГАЗПРОМ</div>
+                    <div class="bg-gray-100 h-16 flex items-center justify-center font-bold">ПИК</div>
+                    <div class="bg-gray-100 h-16 flex items-center justify-center font-bold">ЯНДЕКС</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-white py-10 text-center text-sm"><p>&copy; 2025 Steklo Interior.</p></footer>
+    <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="X-BZT7SVD9BZ6U9MYioBG";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+</body>
+</html>
