@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Всё о стекле: Руководство для Архитекторов и Заказчиков | Steklo Interior</title>
     <meta name="description" content="Полный технический разбор архитектурного стекла. Виды тонировки Planibel, матовое стекло Matelux, физика закалки, HST-тестирование и стандарты безопасности ГОСТ.">
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
+    
+    <style type="text/tailwindcss">
         body { font-family: 'Inter', sans-serif; }
         .glass-gradient { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
         .pro-badge { @apply inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2; }
@@ -82,6 +85,7 @@
                     <p class="text-xl text-gray-300 font-light leading-relaxed mb-8">
                         От выбора стекла зависит не только внешний вид офиса, но и цветопередача стен, приватность переговорных и безопасность сотрудников.
                     </p>
+                    
                     <div class="flex flex-wrap gap-3">
                         <a href="#catalog" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg text-sm font-bold transition shadow-lg border border-blue-500">Каталог</a>
                         <a href="#tinted" class="px-4 py-2 bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg text-sm font-bold transition">Тонированное</a>
@@ -103,7 +107,9 @@
     <section id="catalog" class="py-20 bg-white border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="chapter-header mb-12">Наша палитра</h2>
+            
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                
                 <div class="group cursor-pointer">
                     <div class="aspect-square bg-gray-100 rounded-xl overflow-hidden relative mb-3 border border-gray-200">
                         <img src="img/glass/catalog-m1.jpg" alt="Образец прозрачного стекла М1" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
@@ -112,54 +118,60 @@
                     <h3 class="font-bold text-slate-900">Прозрачное M1</h3>
                     <p class="text-xs text-gray-500 mt-1">Классическое стекло с легким зеленым оттенком торца.</p>
                 </div>
+
                 <div class="group cursor-pointer">
                     <div class="aspect-square bg-gray-50 rounded-xl overflow-hidden relative mb-3 border border-blue-100">
                         <img src="img/glass/catalog-crystalvision.jpg" alt="Образец осветленного стекла Crystalvision" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
                         <span class="absolute top-2 left-2 bg-blue-600 text-white text-[10px] font-bold px-2 py-1 rounded">Hit</span>
                     </div>
                     <h3 class="font-bold text-blue-600">Crystalvision</h3>
-                    <p class="text-xs text-gray-500 mt-1">Премиальное просветленное стекло. Нейтральный торец.</p>
+                    <p class="text-xs text-gray-500 mt-1">Премиальное просветленное стекло. Нейтральный торец, идеальная цветопередача.</p>
                 </div>
+
                 <div class="group cursor-pointer">
                     <div class="aspect-square bg-gray-100 rounded-xl overflow-hidden relative mb-3 border border-gray-200">
                         <img src="img/glass/catalog-matelux.jpg" alt="Образец матового стекла Matelux" class="w-full h-full object-cover transition duration-500 group-hover:scale-105 opacity-90">
                         <span class="absolute top-2 left-2 bg-gray-500 text-white text-[10px] font-bold px-2 py-1 rounded">Privacy</span>
                     </div>
                     <h3 class="font-bold text-slate-900">Matelux (Сатин)</h3>
-                    <p class="text-xs text-gray-500 mt-1">Химическое травление. Бархатистая поверхность.</p>
+                    <p class="text-xs text-gray-500 mt-1">Химическое травление. Бархатистая поверхность, пропускает свет, но скрывает детали.</p>
                 </div>
+
                 <div class="group cursor-pointer">
                     <div class="aspect-square bg-gray-50 rounded-xl overflow-hidden relative mb-3 border border-blue-100">
                         <img src="img/glass/catalog-matelux-crystal.jpg" alt="Образец белого матового стекла Matelux Crystal" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
                         <span class="absolute top-2 left-2 bg-blue-400 text-white text-[10px] font-bold px-2 py-1 rounded">Premium Matte</span>
                     </div>
                     <h3 class="font-bold text-slate-900">Matelux Crystal</h3>
-                    <p class="text-xs text-gray-500 mt-1">Белоснежное матовое стекло на базе просветленного.</p>
+                    <p class="text-xs text-gray-500 mt-1">Белоснежное матовое стекло на базе просветленного. Без зеленого подтона.</p>
                 </div>
+
                 <div class="group cursor-pointer">
                     <div class="aspect-square bg-amber-50 rounded-xl overflow-hidden relative mb-3 border border-amber-100">
                         <img src="img/glass/catalog-bronze.jpg" alt="Образец тонированного стекла Бронза" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-amber-900/10 mix-blend-multiply"></div>
                     </div>
                     <h3 class="font-bold text-slate-900">Bronze (Бронза)</h3>
-                    <p class="text-xs text-gray-500 mt-1">Тонированное в массе. Теплый коричневый оттенок.</p>
+                    <p class="text-xs text-gray-500 mt-1">Тонированное в массе. Теплый коричневый оттенок для уютных интерьеров.</p>
                 </div>
+
                 <div class="group cursor-pointer">
                     <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden relative mb-3 border border-slate-200">
                         <img src="img/glass/catalog-graphite.jpg" alt="Образец тонированного стекла Графит" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-slate-900/10 mix-blend-multiply"></div>
                     </div>
                     <h3 class="font-bold text-slate-900">Graphite (Графит)</h3>
-                    <p class="text-xs text-gray-500 mt-1">Тонированное в массе (Grey). Строгий серый оттенок.</p>
+                    <p class="text-xs text-gray-500 mt-1">Тонированное в массе (Grey). Строгий серый оттенок, снижает светопропускание.</p>
                 </div>
+
                 <div class="group cursor-pointer col-span-2 md:col-span-1">
                     <div class="aspect-square bg-gray-200 rounded-xl overflow-hidden relative mb-3 border border-gray-300">
                         <img src="img/glass/catalog-mirror.jpg" alt="Образец зеркала серебро" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
                     </div>
                     <h3 class="font-bold text-slate-900">Зеркало (Серебро)</h3>
-                    <p class="text-xs text-gray-500 mt-1">Влагостойкое зеркало. Для облицовки стен.</p>
+                    <p class="text-xs text-gray-500 mt-1">Влагостойкое зеркало. Используется для облицовки стен и скрытых дверей.</p>
                 </div>
-                
+
                 <div class="bg-slate-900 rounded-xl p-6 flex flex-col justify-center items-center text-center text-white cursor-pointer hover:bg-slate-800 transition">
                     <i class="fa-solid fa-swatchbook text-3xl mb-4 text-blue-500"></i>
                     <h3 class="font-bold mb-2">Посмотрите вживую</h3>
@@ -170,6 +182,7 @@
                         Контакты офиса
                     </a>
                 </div>
+
             </div>
         </div>
     </section>
@@ -177,15 +190,17 @@
     <section id="types" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="chapter-header">Сравнение: M1 vs Crystalvision</h2>
+            
             <div class="max-w-3xl mb-12">
                 <h4 class="text-lg font-bold text-slate-900 mb-3 border-l-4 border-blue-500 pl-3">Эффект «бутылочного стекла»</h4>
                 <p class="text-lg text-gray-600 leading-relaxed">
                     Вы замечали, что край обычного стекла имеет насыщенный бутылочный цвет? Виной всему — <b>оксид железа</b> в песке. Для офисов класса "А" это критично: зеленое стекло искажает цвета интерьера за ним. Белая стена становится мятной, а бежевая мебель — грязноватой.
                 </p>
             </div>
+
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-gray-200 rounded-2xl overflow-hidden shadow-2xl">
                 <div class="relative group h-[500px]">
-                    <img src="img/glass/m1-standard.jpg" alt="Зеленая кромка обычного стекла M1" class="w-full h-full object-cover grayscale-0">
+                    <img src="img/glass/m1-standard.jpg" alt="Зеленая кромка обычного стекла M1 - визуальное сравнение" class="w-full h-full object-cover grayscale-0">
                     <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-500"></div>
                     <div class="absolute bottom-0 left-0 p-8 w-full">
                         <span class="pro-badge bg-gray-200 text-gray-800">Стандарт (M1)</span>
@@ -193,12 +208,13 @@
                         <p class="text-gray-200 text-sm mb-4">Классическое "сырое" стекло. Доступное, надежное, но с характерным оттенком.</p>
                         <div class="bg-black/50 backdrop-blur p-4 rounded-lg border-l-4 border-green-500">
                             <p class="text-green-400 font-bold text-xs uppercase mb-1">Особенность</p>
-                            <p class="text-white text-sm">Зеленый торец. Искажает цветопередачу.</p>
+                            <p class="text-white text-sm">Зеленый торец. Искажает цветопередачу светлых оттенков (белый, бежевый).</p>
                         </div>
                     </div>
                 </div>
+                
                 <div class="relative group h-[500px]">
-                    <img src="img/glass/optiwhite.jpg" alt="Голубая кромка осветленного стекла Optiwhite" class="w-full h-full object-cover">
+                    <img src="img/glass/optiwhite.jpg" alt="Голубая кромка осветленного стекла Optiwhite - визуальное сравнение" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-black/40 group-hover:bg-black/10 transition duration-500"></div>
                     <div class="absolute bottom-0 left-0 p-8 w-full">
                         <span class="pro-badge bg-blue-600 text-white">Premium Choice</span>
@@ -206,7 +222,7 @@
                         <p class="text-gray-200 text-sm mb-4">Осветленное стекло с низким содержанием железа. Абсолютная нейтральность.</p>
                         <div class="bg-black/50 backdrop-blur p-4 rounded-lg border-l-4 border-blue-400">
                             <p class="text-blue-300 font-bold text-xs uppercase mb-1">Особенность</p>
-                            <p class="text-white text-sm">Ледяной голубой торец. 100% передача цвета.</p>
+                            <p class="text-white text-sm">Ледяной голубой торец. 100% передача цвета. Ощущение "отсутствия" преграды.</p>
                         </div>
                     </div>
                 </div>
@@ -223,6 +239,7 @@
                     Многие путают это решение с тонировочной пленкой. Главное отличие: краситель (оксид металла) добавляется в стекло <b>на этапе плавки</b>. Такой цвет невозможно поцарапать или содрать — он вечный. Стекло работает как светофильтр, задерживая УФ-лучи.
                 </p>
             </div>
+
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-gray-200 rounded-2xl overflow-hidden shadow-2xl">
                 <div class="relative group h-[500px]">
                     <img src="img/glass/tint-bronze.jpg" alt="Перегородки из бронзового стекла в интерьере" class="w-full h-full object-cover">
@@ -236,6 +253,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="relative group h-[500px]">
                     <img src="img/glass/tint-graphite.jpg" alt="Перегородки из графитового стекла в интерьере" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
@@ -261,6 +279,7 @@
                     Мы принципиально используем заводское стекло <b>Matelux (Сатин)</b>. В отличие от дешевой пескоструйной обработки (которая шершавая и собирает грязь), сатин создается кислотным травлением. Поверхность получается шелковистой, гладкой и легко моется.
                 </p>
             </div>
+
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-gray-200 rounded-2xl overflow-hidden shadow-2xl">
                 <div class="relative group h-[500px]">
                     <img src="img/glass/matte-privacy.jpg" alt="Матовая перегородка обеспечивает приватность силуэта" class="w-full h-full object-cover">
@@ -273,6 +292,7 @@
                         </p>
                     </div>
                 </div>
+                
                 <div class="relative group h-[500px]">
                     <img src="img/glass/matte-texture.jpg" alt="Макро фото шелковистой текстуры стекла Matelux" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
@@ -301,6 +321,7 @@
                     <p class="text-gray-600 mb-8 leading-relaxed">
                         Внешняя корка остывает мгновенно и сжимается. Внутренняя часть еще горячая. Когда остывает и она, она пытается сжаться, но внешняя корка уже "застыла". Внутри стекла создается колоссальное напряжение растяжения, запертое в "корсет" сжатия.
                     </p>
+                    
                     <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-orange-500">
                         <h4 class="font-bold text-lg mb-2">Результат процесса:</h4>
                         <ul class="space-y-3">
@@ -310,6 +331,7 @@
                         </ul>
                     </div>
                 </div>
+
                 <div class="md:w-1/2">
                     <h3 class="font-bold text-xl mb-6">Опасный враг: Никель-Сульфид (NiS)</h3>
                     <div class="bg-white p-6 rounded-xl border border-gray-200 mb-6">
@@ -324,6 +346,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="bg-white rounded-xl border border-gray-200 p-2 shadow-xl relative overflow-hidden group">
                         <div class="aspect-video relative overflow-hidden rounded-lg">
                              <img src="img/glass/hst-chamber.jpg" alt="Промышленная камера Heat Soak Test для тестирования стекла" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
@@ -331,6 +354,7 @@
                                  <span class="text-white text-sm font-bold"><i class="fa-solid fa-temperature-high mr-2"></i>Процесс тестирования EN 14179</span>
                              </div>
                         </div>
+
                         <div class="p-4 bg-green-50 rounded-b-lg flex items-start gap-3 mt-2">
                             <i class="fa-solid fa-circle-check text-green-500 mt-1"></i>
                             <p class="text-xs text-green-800 leading-tight">
@@ -349,6 +373,7 @@
             <p class="text-xl text-gray-400 font-light max-w-3xl mb-12">
                 Вы никогда не задумывались, почему стекло не режет руки? Весь секрет в обработке торца. У нас есть два стандарта.
             </p>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div class="group">
                     <div class="relative h-64 bg-gray-800 rounded-2xl overflow-hidden mb-6 border border-gray-700 group-hover:border-gray-500 transition">
@@ -364,6 +389,7 @@
                         <i class="fa-solid fa-check mr-2"></i> Для стекла в профиле (не видно)
                     </div>
                 </div>
+
                 <div class="group">
                     <div class="relative h-64 bg-gray-800 rounded-2xl overflow-hidden mb-6 border border-blue-500/30 group-hover:border-blue-500 transition shadow-[0_0_30px_rgba(59,130,246,0.1)]">
                         <img src="img/glass/edge-polished.jpg" alt="Прозрачная полированная еврокромка стекла крупным планом" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition duration-500">
@@ -379,6 +405,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="mt-12 p-6 bg-white/5 rounded-xl border border-white/10 flex gap-4 items-start">
                 <i class="fa-solid fa-triangle-exclamation text-yellow-500 text-xl mt-1"></i>
                 <div>
@@ -395,6 +422,7 @@
     <section id="safety" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="chapter-header">Краш-тест: Что будет, если разбить?</h2>
+            
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-red-50 p-6 rounded-2xl border border-red-100 group hover:shadow-lg transition">
                     <h3 class="font-bold text-red-800 mb-2 flex items-center"><i class="fa-solid fa-skull-crossbones mr-2"></i> Обычное стекло</h3>
@@ -404,6 +432,7 @@
                     <p class="text-sm text-red-700 font-bold">ОПАСНО ДЛЯ ЖИЗНИ</p>
                     <p class="text-xs text-red-600 mt-2">Разлетается на огромные острые "кинжалы", которые могут нанести фатальные травмы.</p>
                 </div>
+
                 <div class="bg-green-50 p-6 rounded-2xl border border-green-100 scale-105 shadow-xl group hover:shadow-2xl transition z-10">
                     <h3 class="font-bold text-green-800 mb-2 flex items-center"><i class="fa-solid fa-shield-halved mr-2"></i> Закаленное (Наш стандарт)</h3>
                     <div class="aspect-square bg-white rounded border border-green-200 mb-4 flex items-center justify-center relative overflow-hidden">
@@ -412,6 +441,7 @@
                     <p class="text-sm text-green-700 font-bold">БЕЗОПАСНО</p>
                     <p class="text-xs text-green-600 mt-2">Рассыпается в мелкую крошку с тупыми краями (как автомобильное). Невозможно порезаться глубоко.</p>
                 </div>
+
                 <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 group hover:shadow-lg transition">
                     <h3 class="font-bold text-blue-800 mb-2 flex items-center"><i class="fa-solid fa-layer-group mr-2"></i> Триплекс (Ламинация)</h3>
                     <div class="aspect-square bg-white rounded border border-blue-200 mb-4 flex items-center justify-center relative overflow-hidden">
