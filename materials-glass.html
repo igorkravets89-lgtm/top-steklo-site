@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Архитектурное стекло: Виды, Закалка, Обработка | Steklo Interior</title>
-    <meta name="description" content="Все о стекле для перегородок: отличие сырого от закаленного, виды обработки кромки (еврокромка), триплекс и смарт-стекло. Технический гид.">
+    <title>Всё о стекле: Производство, Закалка, Обработка | Steklo Interior</title>
+    <meta name="description" content="Полный гид по архитектурному стеклу. Флоат-процесс, физика закалки, виды кромок и стандарты ГОСТ. Энциклопедия для архитекторов.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body { font-family: 'Inter', sans-serif; }
-        .glass-card { @apply bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition duration-300; }
-        .spec-row { @apply flex justify-between py-3 border-b border-gray-100 text-sm; }
+        .process-step { @apply relative pl-8 pb-8 border-l-2 border-gray-200 last:border-0; }
+        .process-step::before { content: ''; @apply absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm; }
+        .tech-box { @apply bg-slate-50 border border-slate-200 p-6 rounded-xl; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-white text-slate-900 font-sans">
 
     <header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,14 +29,12 @@
                             Продукция <i class="fa-solid fa-chevron-down text-[10px] ml-1.5 opacity-50"></i>
                         </button>
                         <div class="absolute left-0 top-20 w-[700px] bg-white border border-gray-100 shadow-xl rounded-b-lg hidden group-hover:grid grid-cols-3 p-6 gap-6 z-50">
-                            <div><h4 class="font-bold text-gray-900 mb-2 uppercase text-xs tracking-wider border-b pb-2">Перегородки</h4><ul class="space-y-2 text-sm text-gray-600"><li><a href="partitions.html" class="hover:text-blue-600">Офисные</a></li><li><a href="partitions.html" class="hover:text-blue-600">Лофт</a></li><li><a href="partitions.html" class="hover:text-blue-600">Противопожарные</a></li></ul></div>
+                            <div><h4 class="font-bold text-gray-900 mb-2 uppercase text-xs tracking-wider border-b pb-2">Перегородки</h4><ul class="space-y-2 text-sm text-gray-600"><li><a href="partitions.html" class="hover:text-blue-600">Офисные</a></li><li><a href="partitions.html" class="hover:text-blue-600">Лофт</a></li></ul></div>
                             <div><h4 class="font-bold text-gray-900 mb-2 uppercase text-xs tracking-wider border-b pb-2">Двери</h4><ul class="space-y-2 text-sm text-gray-600"><li><a href="doors.html" class="hover:text-blue-600">Скрытые</a></li><li><a href="doors.html" class="hover:text-blue-600">В алюминии</a></li></ul></div>
-                            <div><h4 class="font-bold text-gray-900 mb-2 uppercase text-xs tracking-wider border-b pb-2">Интерьер</h4><ul class="space-y-2 text-sm text-gray-600"><li><a href="ceilings.html" class="hover:text-blue-600">Потолки</a></li><li><a href="mirrors.html" class="hover:text-blue-600">Зеркала</a></li><li><a href="railings.html" class="hover:text-blue-600">Ограждения</a></li></ul></div>
+                            <div><h4 class="font-bold text-gray-900 mb-2 uppercase text-xs tracking-wider border-b pb-2">Интерьер</h4><ul class="space-y-2 text-sm text-gray-600"><li><a href="ceilings.html" class="hover:text-blue-600">Потолки</a></li><li><a href="mirrors.html" class="hover:text-blue-600">Зеркала</a></li></ul></div>
                         </div>
                     </div>
                     <a href="materials.html" class="text-blue-600 font-medium inline-flex items-center h-20 border-b-2 border-blue-600 transition">Материалы</a>
-                    <a href="services.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20">Услуги</a>
-                    <a href="portfolio.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20">Портфолио</a>
                     <a href="contacts.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20">Контакты</a>
                 </nav>
                 <div class="hidden md:flex items-center"><a href="contacts.html" class="bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-md font-medium text-sm transition">Рассчитать</a></div>
@@ -43,73 +42,64 @@
         </div>
     </header>
 
-    <section class="relative pt-32 pb-20 bg-slate-900 text-white">
-        <div class="absolute inset-0 z-0 opacity-20"><img src="img/hero-bg.jpg" class="w-full h-full object-cover"></div>
-        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
-            <a href="materials.html" class="inline-flex items-center text-blue-400 hover:text-white mb-6 text-sm font-bold tracking-wide uppercase transition">
-                <i class="fa-solid fa-arrow-left mr-2"></i> Назад к каталогу материалов
-            </a>
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">Архитектурное стекло</h1>
-            <p class="text-xl text-gray-300 font-light">
-                Технический разбор: чем отличается закаленное стекло от сырого, зачем нужна полировка кромки и как выбрать безопасное решение для офиса.
+    <section class="relative pt-32 pb-20 bg-slate-900 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-20"><img src="img/hero-bg.jpg" class="w-full h-full object-cover"></div>
+        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
+            <a href="materials.html" class="inline-flex items-center text-blue-400 hover:text-white mb-6 text-sm font-bold tracking-wide uppercase transition"><i class="fa-solid fa-arrow-left mr-2"></i> Каталог материалов</a>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Энциклопедия стекла</h1>
+            <p class="text-xl text-gray-300 font-light max-w-3xl mx-auto">
+                От песчинки кварца до сверхпрочной перегородки. Физика процесса, история технологии и стандарты качества.
             </p>
         </div>
     </section>
 
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="mb-12 border-l-4 border-blue-600 pl-6">
-                <h2 class="text-3xl font-bold text-slate-900">1. Типы стекла и безопасность</h2>
-                <p class="text-gray-500 mt-2">Почему в перегородках мы используем только закаленное стекло (ГОСТ 30698-2014).</p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div class="glass-card border-l-4 border-l-red-500">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-xl font-bold">Сырое (Float)</h3>
-                        <i class="fa-solid fa-triangle-exclamation text-red-500 text-xl"></i>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-blue-600 font-bold text-sm uppercase tracking-widest">Основы материаловедения</span>
+                    <h2 class="text-3xl font-bold text-slate-900 mt-2 mb-6">Что такое стекло?</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        С точки зрения физики, стекло — это <b>аморфное твердое тело</b>. Оно твердое, как кристалл, но его молекулярная решетка хаотична, как у жидкости. Именно это дает ему прозрачность.
+                    </p>
+                    <div class="tech-box mb-8">
+                        <h4 class="font-bold mb-2 text-sm"><i class="fa-solid fa-flask text-blue-600 mr-2"></i> Химический состав (Шихта)</h4>
+                        <ul class="text-sm space-y-2 text-gray-600">
+                            <li>• <b>70-72% Кварцевый песок</b> (SiO₂) — основа стекла.</li>
+                            <li>• <b>14% Сода</b> (Na₂CO₃) — снижает температуру плавления.</li>
+                            <li>• <b>10% Известь</b> (CaO) — придает химическую стойкость и блеск.</li>
+                        </ul>
                     </div>
-                    <p class="text-sm text-gray-600 mb-4">Базовое листовое стекло. Поддается резке. Имеет низкую прочность на изгиб.</p>
-                    <div class="bg-red-50 p-3 rounded text-xs text-red-800 mb-4">
-                        <strong>Как бьется:</strong> Крупными, острыми кинжальными осколками. Высокий риск травм.
-                    </div>
-                    <div class="aspect-video bg-gray-100 rounded flex items-center justify-center text-gray-400 text-xs relative overflow-hidden">
-                         
-                        <span class="absolute bottom-2">Опасные осколки</span>
-                    </div>
-                    <p class="mt-4 text-xs text-gray-400">Применение: Только в окнах (в рамах).</p>
+                    
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Немного истории</h3>
+                    <p class="text-sm text-gray-500 mb-4">
+                        Стекло известно человечеству более 5000 лет. Но настоящая революция произошла в 1959 году, когда сэр Алистер Пилкингтон изобрел <b>Флоат-процесс</b>. До этого листовое стекло полировали вручную, что было безумно дорого.
+                    </p>
                 </div>
-
-                <div class="glass-card border-l-4 border-l-yellow-500">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-xl font-bold">Термоупрочненное</h3>
-                        <i class="fa-solid fa-layer-group text-yellow-500 text-xl"></i>
+                
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+                    <h3 class="font-bold text-lg mb-6 text-center">Флоат-процесс (Производство листа)</h3>
+                    <div class="space-y-0">
+                        <div class="process-step">
+                            <h4 class="font-bold text-sm">1. Плавильная печь (1600°C)</h4>
+                            <p class="text-xs text-gray-500 mt-1">Смесь песка, соды и извести плавится в гигантской печи до состояния жидкой лавы.</p>
+                        </div>
+                        <div class="process-step">
+                            <h4 class="font-bold text-sm">2. Ванна с оловом (1100°C)</h4>
+                            <p class="text-xs text-gray-500 mt-1">Жидкое стекло выливается на поверхность расплавленного олова. Благодаря гравитации оно растекается идеально ровным слоем (как масло по воде). Это и есть "Float" (плавать).</p>
+                        </div>
+                        <div class="process-step">
+                            <h4 class="font-bold text-sm">3. Печь отжига (Лера)</h4>
+                            <p class="text-xs text-gray-500 mt-1">Лента стекла медленно охлаждается, чтобы снять внутренние напряжения. На выходе мы получаем идеально гладкое <b>Сырое стекло (M1)</b>.</p>
+                        </div>
                     </div>
-                    <p class="text-sm text-gray-600 mb-4">Проходит термообработку, но охлаждается медленно. Прочнее сырого в 2 раза.</p>
-                    <div class="bg-yellow-50 p-3 rounded text-xs text-yellow-800 mb-4">
-                        <strong>Как бьется:</strong> Крупными кусками, которые удерживаются в раме ("эффект замка").
-                    </div>
-                    <div class="aspect-video bg-gray-100 rounded flex items-center justify-center text-gray-400 text-xs relative overflow-hidden">
+                    <div class="mt-4 aspect-video bg-white border border-gray-200 rounded flex items-center justify-center relative overflow-hidden">
                         
-                        <span class="absolute bottom-2">Крупные фрагменты</span>
-                    </div>
-                    <p class="mt-4 text-xs text-gray-400">Применение: Фасады, козырьки.</p>
-                </div>
 
-                <div class="glass-card border-l-4 border-l-green-600 shadow-xl transform md:-translate-y-4">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-xl font-bold text-green-700">Закаленное (Tempered)</h3>
-                        <i class="fa-solid fa-shield-halved text-green-600 text-xl"></i>
+[Image of float glass manufacturing process diagram]
+
+                        <p class="absolute bottom-2 text-xs text-gray-400">Схема линии Pilkington</p>
                     </div>
-                    <p class="text-sm text-gray-600 mb-4">Нагрев до 650°C и резкое охлаждение. Внутри создается напряжение сжатия. Прочнее сырого в 5-7 раз.</p>
-                    <div class="bg-green-50 p-3 rounded text-xs text-green-800 mb-4">
-                        <strong>Как бьется:</strong> Мелкая крошка (менее 1 см) с тупыми краями. Травмобезопасно.
-                    </div>
-                    <div class="aspect-video bg-gray-100 rounded flex items-center justify-center text-gray-400 text-xs relative overflow-hidden">
-                        
-                        <span class="absolute bottom-2">Безопасная крошка</span>
-                    </div>
-                    <p class="mt-4 text-xs text-gray-400 font-bold">Применение: Перегородки, Двери, Душевые.</p>
                 </div>
             </div>
         </div>
@@ -117,48 +107,75 @@
 
     <section class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="mb-12 border-l-4 border-blue-600 pl-6">
-                <h2 class="text-3xl font-bold text-slate-900">2. Обработка кромки</h2>
-                <p class="text-gray-500 mt-2">Почему это важно: необработанное стекло взорвется в печи закалки из-за микротрещин.</p>
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-bold text-sm uppercase tracking-widest">Термообработка</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">Магия прочности: Закалка</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto mt-4">Как сделать хрупкий материал прочнее стали на изгиб?</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="space-y-8">
-                    <div class="glass-card flex gap-6 items-start">
-                        <div class="w-16 h-16 bg-gray-200 rounded flex items-center justify-center font-bold text-gray-500 text-xl">F</div>
-                        <div>
-                            <h4 class="text-lg font-bold mb-2">Шлифованная кромка (Матовая)</h4>
-                            <p class="text-sm text-gray-600">Обработка грубым абразивом. Торец становится ровным и безопасным, но остается шероховатым и матовым.</p>
-                            <p class="text-xs text-blue-600 font-bold mt-2">Применяется: В рамных системах (где край скрыт).</p>
-                        </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Физика процесса закалки</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Готовое нарезанное стекло нагревают в печи до <b>650-680°C</b> (почти до точки размягчения), а затем <b>резко</b> охлаждают струями холодного воздуха.
+                    </p>
+                    <div class="bg-white p-6 rounded-xl border-l-4 border-blue-600 shadow-sm mb-6">
+                        <h4 class="font-bold text-blue-700 mb-2">В чем секрет?</h4>
+                        <p class="text-sm text-gray-600">
+                            Внешние слои стекла остывают и сжимаются мгновенно, становясь "броней". Внутренняя часть остывает медленнее и пытается сжаться, но внешняя корка ей не дает. 
+                            В итоге внутри возникает мощное <b>напряжение растяжения</b>, а снаружи — <b>сжатия</b>. Этот баланс сил делает стекло в 5-7 раз прочнее.
+                        </p>
                     </div>
-                    <div class="glass-card flex gap-6 items-start border-blue-200 shadow-md">
-                        <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded flex items-center justify-center font-bold text-xl"><i class="fa-regular fa-gem"></i></div>
-                        <div>
-                            <h4 class="text-lg font-bold mb-2">Полированная (Еврокромка)</h4>
-                            <p class="text-sm text-gray-600">Финишная обработка полировальными кругами. Торец становится идеально прозрачным и гладким. Форма трапеции.</p>
-                            <p class="text-xs text-blue-600 font-bold mt-2">Применяется: В цельностеклянных перегородках и дверях (видимый край).</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-temperature-arrow-up text-3xl text-red-500"></i>
+                            <div>
+                                <h4 class="font-bold">Нагрев</h4>
+                                <p class="text-xs text-gray-500">Равномерный прогрев листа в камере (осцилляция).</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-wind text-3xl text-blue-500"></i>
+                            <div>
+                                <h4 class="font-bold">Квенчинг (Охлаждение)</h4>
+                                <p class="text-xs text-gray-500">Обдув под высоким давлением. Ключевой этап.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <h4 class="font-bold text-center mb-6 text-gray-400 uppercase text-xs tracking-widest">Схема профиля кромки</h4>
-                    <div class="grid grid-cols-2 gap-8">
-                        <div class="text-center">
-                            <div class="h-40 bg-gray-100 rounded-lg flex items-center justify-center relative overflow-hidden mb-4">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+                    <h3 class="text-lg font-bold mb-6 text-center border-b pb-4">Сравнение технологий</h3>
+                    
+                    <div class="grid grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <h4 class="font-bold text-green-600 mb-2">Закаленное (Tempered)</h4>
+                            <p class="text-xs text-gray-500 mb-2">Резкое охлаждение.</p>
+                            <ul class="text-xs space-y-2">
+                                <li><i class="fa-solid fa-check text-green-500"></i> Прочность: <b>x5-7</b></li>
+                                <li><i class="fa-solid fa-check text-green-500"></i> Осколки: <b>Мелкая крошка</b></li>
+                                <li><i class="fa-solid fa-check text-green-500"></i> Безопасно для людей</li>
+                            </ul>
+                            <div class="mt-4 aspect-square bg-gray-100 rounded flex items-center justify-center relative overflow-hidden">
                                 
                             </div>
-                            <p class="font-bold text-sm">Трапеция (Евро)</p>
-                            <p class="text-xs text-gray-400">Стандарт для перегородок</p>
                         </div>
-                        <div class="text-center">
-                            <div class="h-40 bg-gray-100 rounded-lg flex items-center justify-center relative overflow-hidden mb-4">
+                        <div class="border-l pl-8">
+                            <h4 class="font-bold text-orange-600 mb-2">Термоупрочненное</h4>
+                            <p class="text-xs text-gray-500 mb-2">Медленное охлаждение.</p>
+                            <ul class="text-xs space-y-2">
+                                <li><i class="fa-solid fa-check text-orange-500"></i> Прочность: <b>x2</b></li>
+                                <li><i class="fa-solid fa-triangle-exclamation text-orange-500"></i> Осколки: <b>Крупные куски</b></li>
+                                <li><i class="fa-solid fa-check text-orange-500"></i> Нет оптических искажений</li>
+                            </ul>
+                            <div class="mt-4 aspect-square bg-gray-100 rounded flex items-center justify-center relative overflow-hidden">
                                 
                             </div>
-                            <p class="font-bold text-sm">Карандаш (Круглая)</p>
-                            <p class="text-xs text-gray-400">Для мебели и зеркал</p>
                         </div>
+                    </div>
+                    <div class="text-center text-xs text-gray-400">
+                        В интерьерах мы используем только <b>Закаленное стекло</b> (Безопасность).
                     </div>
                 </div>
             </div>
@@ -167,70 +184,40 @@
 
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="flex flex-col md:flex-row gap-12 items-center">
-                <div class="md:w-1/2">
-                    <div class="mb-6 border-l-4 border-blue-600 pl-6">
-                        <h2 class="text-3xl font-bold text-slate-900">3. Триплекс (Ламинация)</h2>
-                        <p class="text-gray-500 mt-2">Многослойное стекло для максимальной защиты и тишины.</p>
-                    </div>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Триплекс — это "сэндвич" из двух стекол, склеенных полимерной пленкой (PVB или EVA) под высокой температурой.
+            <h2 class="text-3xl font-bold mb-10">Резка и Обработка кромки</h2>
+            
+            <div class="bg-blue-50 border border-blue-200 p-6 rounded-xl mb-12 flex items-start gap-4">
+                <i class="fa-solid fa-circle-exclamation text-2xl text-blue-600 mt-1"></i>
+                <div>
+                    <h4 class="font-bold text-blue-900">Золотое правило:</h4>
+                    <p class="text-sm text-blue-800">
+                        Вся механическая обработка (резка, сверление отверстий, шлифовка кромки) производится <b>СТРОГО ДО ЗАКАЛКИ</b>. 
+                        После закалки стекло невозможно просверлить или отрезать — оно мгновенно рассыплется в крошку из-за разрушения баланса напряжений.
                     </p>
-                    
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-4">
-                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600"><i class="fa-solid fa-user-shield"></i></div>
-                            <div>
-                                <h4 class="font-bold">Безопасность</h4>
-                                <p class="text-xs text-gray-500">Осколки не осыпаются, а повисают на пленке.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600"><i class="fa-solid fa-volume-xmark"></i></div>
-                            <div>
-                                <h4 class="font-bold">Акустика (Stratophone)</h4>
-                                <p class="text-xs text-gray-500">Специальная акустическая пленка гасит шум до 50 дБ.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="md:w-1/2 relative">
-                    <div class="absolute -inset-4 bg-blue-600/10 rounded-full blur-2xl"></div>
-                    <div class="relative bg-white p-2 rounded-2xl shadow-2xl border border-gray-100">
-                        <div class="aspect-square bg-slate-50 rounded-xl overflow-hidden flex items-center justify-center relative">
-                            
-                            <div class="absolute bottom-4 right-4 bg-white/90 px-3 py-1 text-xs font-bold rounded shadow">Схема: 5.1.5</div>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="py-20 bg-slate-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-12">Варианты декорирования</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="p-6 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition">
-                    <div class="h-12 w-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl"><i class="fa-regular fa-sun"></i></div>
-                    <h3 class="font-bold mb-2">Optiwhite</h3>
-                    <p class="text-xs text-gray-400">Осветленное стекло без зеленого оттенка. Идеально для белых интерьеров.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group">
+                    <div class="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
+                         
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">1. Автоматическая резка</h3>
+                    <p class="text-sm text-gray-600">Стол с ЧПУ наносит царапину алмазным роликом. Затем происходит разлом по линии реза. Точность +/- 0.5 мм.</p>
                 </div>
-                <div class="p-6 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition">
-                    <div class="h-12 w-12 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl"><i class="fa-solid fa-glasses"></i></div>
-                    <h3 class="font-bold mb-2">Тонировка</h3>
-                    <p class="text-xs text-gray-400">Стекло, окрашенное в массе: Grey (Графит), Bronze (Бронза), Black Pearl.</p>
+                <div class="group">
+                    <div class="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
+                         
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">2. Шлифовка кромки</h3>
+                    <p class="text-sm text-gray-600">Грубые алмазные круги снимают острый край ("трапеция" или "карандаш"). Поверхность матовая. Обязательно перед закалкой, чтобы снять микросколы.</p>
                 </div>
-                <div class="p-6 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition">
-                    <div class="h-12 w-12 bg-gray-500 rounded-full flex items-center justify-center mx-auto mb-4 text-xl"><i class="fa-solid fa-spray-can"></i></div>
-                    <h3 class="font-bold mb-2">Матирование</h3>
-                    <p class="text-xs text-gray-400">Пескоструйная обработка (сплошная или полосы) или матовая пленка.</p>
-                </div>
-                <div class="p-6 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition">
-                    <div class="h-12 w-12 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-                    <h3 class="font-bold mb-2">Smart Glass</h3>
-                    <p class="text-xs text-gray-400">Электрохромное стекло. Становится матовым при нажатии кнопки.</p>
+                <div class="group">
+                    <div class="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
+                         
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">3. Полировка (Еврокромка)</h3>
+                    <p class="text-sm text-gray-600">Финишная обработка мягкими кругами с оксидом церия. Торец становится абсолютно прозрачным, как само стекло.</p>
                 </div>
             </div>
         </div>
@@ -240,8 +227,5 @@
         <div class="max-w-7xl mx-auto px-4 text-center text-sm"><p>&copy; 2025 Steklo Interior.</p></div>
     </footer>
 
-    <script>
-    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="X-BZT7SVD9BZ6U9MYioBG";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-    </script>
 </body>
 </html>
