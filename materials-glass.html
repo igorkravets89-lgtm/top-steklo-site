@@ -25,11 +25,50 @@
                 <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer group">
                     <span class="font-bold text-2xl tracking-tighter text-slate-900 group-hover:text-blue-600 transition">STEKLO<span class="text-blue-600 group-hover:text-slate-900 transition">INTERIOR</span></span>
                 </a>
+
                 <nav class="hidden md:flex space-x-8">
-                    <a href="materials.html" class="text-blue-600 font-medium inline-flex items-center h-20 border-b-2 border-blue-600 transition"><i class="fa-solid fa-arrow-left mr-2"></i> Каталог материалов</a>
-                    <a href="contacts.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20">Контакты</a>
+                    <div class="relative group">
+                        <button class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20 border-b-2 border-transparent hover:border-blue-600 transition">
+                            Продукция <i class="fa-solid fa-chevron-down text-[10px] ml-1.5 opacity-50"></i>
+                        </button>
+                        <div class="absolute left-0 top-20 w-[700px] bg-white border border-gray-100 shadow-xl rounded-b-lg hidden group-hover:grid grid-cols-3 p-6 gap-6 z-50">
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2 uppercase text-xs tracking-wider border-b pb-2">Перегородки</h4>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li><a href="partitions.html" class="hover:text-blue-600 block py-1">Офисные (Twin/Single)</a></li>
+                                    <li><a href="partitions.html" class="hover:text-blue-600 block py-1">Лофт системы</a></li>
+                                    <li><a href="partitions.html" class="hover:text-blue-600 block py-1">Противопожарные</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2 uppercase text-xs tracking-wider border-b pb-2">Двери</h4>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li><a href="doors.html" class="hover:text-blue-600 block py-1">Скрытые (Slim/Stels)</a></li>
+                                    <li><a href="doors.html" class="hover:text-blue-600 block py-1">Маятниковые</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2 uppercase text-xs tracking-wider border-b pb-2">Интерьер</h4>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li><a href="ceilings.html" class="hover:text-blue-600 block py-1">Потолки (Грильято)</a></li>
+                                    <li><a href="mirrors.html" class="hover:text-blue-600 block py-1">Зеркала и Панно</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="materials.html" class="text-blue-600 font-medium inline-flex items-center h-20 border-b-2 border-blue-600 transition">Материалы</a>
+                    
+                    <a href="services.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20 border-b-2 border-transparent hover:border-blue-600 transition">Услуги</a>
+                    <a href="portfolio.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20 border-b-2 border-transparent hover:border-blue-600 transition">Портфолио</a>
+                    <a href="contacts.html" class="text-gray-600 hover:text-blue-600 font-medium inline-flex items-center h-20 border-b-2 border-transparent hover:border-blue-600 transition">Контакты</a>
                 </nav>
-                <div class="hidden md:flex items-center"><a href="contacts.html" class="bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-md font-medium text-sm transition">Рассчитать проект</a></div>
+
+                <div class="hidden md:flex items-center">
+                    <a href="contacts.html" class="bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-md font-medium text-sm transition shadow-lg transform hover:-translate-y-0.5">
+                        Рассчитать проект
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -133,10 +172,14 @@
                 </div>
 
                 <div class="bg-slate-900 rounded-xl p-6 flex flex-col justify-center items-center text-center text-white cursor-pointer hover:bg-slate-800 transition">
-                    <i class="fa-solid fa-swatchbook text-3xl mb-4 text-blue-500"></i>
-                    <h3 class="font-bold mb-2">Вся коллекция в офисе</h3>
-                    <p class="text-xs text-gray-400 mb-6">Здесь показана только база. В нашем шоуруме более 100 образцов стекла, зеркал и профиля.</p>
-                    <a href="contacts.html" class="bg-blue-600 text-white text-xs font-bold px-5 py-3 rounded-lg hover:bg-blue-700 transition w-full">Адрес шоурума</a>
+                    <i class="fa-solid fa-layer-group text-3xl mb-4 text-blue-500"></i>
+                    <h3 class="font-bold mb-2">Посмотрите вживую</h3>
+                    <p class="text-xs text-gray-400 mb-6 leading-relaxed">
+                        Монитор не передает реальные оттенки. У нас в офисе есть образцы всех видов стекла и профиля. Приезжайте на кофе и подбор материалов.
+                    </p>
+                    <a href="contacts.html" class="bg-blue-600 text-white text-xs font-bold px-5 py-3 rounded-lg hover:bg-blue-700 transition w-full shadow-lg">
+                        Контакты офиса
+                    </a>
                 </div>
 
             </div>
