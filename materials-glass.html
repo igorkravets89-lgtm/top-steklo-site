@@ -56,7 +56,7 @@
                 <div class="md:w-1/3 glass-card p-6 rounded-2xl border-t-4 border-blue-500 text-slate-900">
                     <h4 class="font-bold text-lg mb-2"><i class="fa-solid fa-triangle-exclamation text-blue-600 mr-2"></i> Знаете ли вы?</h4>
                     <p class="text-sm text-gray-600 mb-4">
-                        Стекло — это аморфная жидкость. Если старинные окна простояли 300 лет, они стали толще снизу, потому что стекло медленно "стекает" вниз.
+                        Стекло — это аморфная жидкость. Если старинные окна простояли 300 лет, они стали толще снизу, потому что стекло медленно "стекает" вниз под силой гравитации.
                     </p>
                     <div class="text-xs text-gray-400 font-mono">Факт из материаловедения</div>
                 </div>
@@ -135,21 +135,37 @@
                             В 1 из 1000 стекол есть микроскопическая частица Никель-Сульфида. Со временем она расширяется и может "взорвать" стекло изнутри. Это называется <b>спонтанное разрушение</b>.
                         </p>
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-xl"><i class="fa-solid fa-bomb"></i></div>
+                            <div class="w-12 h-12 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-xl flex-shrink-0"><i class="fa-solid fa-bomb"></i></div>
                             <div>
-                                <h4 class="font-bold text-slate-900">Heat Soak Test (HST)</h4>
-                                <p class="text-xs text-gray-500">Мы можем дополнительно "прожарить" стекло в печи, чтобы спровоцировать взрыв на производстве, а не у вас в офисе.</p>
+                                <h4 class="font-bold text-slate-900">Решение: Heat Soak Test</h4>
+                                <p class="text-xs text-gray-500">Мы принудительно "старим" стекло в камере, чтобы выявить брак до монтажа.</p>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="relative rounded-xl overflow-hidden aspect-video shadow-2xl group cursor-pointer">
-                        <img src="https://placehold.co/600x400/333/fff?text=Видео:+Взрыв+в+печи" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/50 flex items-center justify-center group-hover:scale-110 transition">
-                            <i class="fa-solid fa-play text-white text-5xl opacity-80"></i>
+                    <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-blue-100 text-blue-600 text-[10px] font-bold px-2 py-1 rounded-bl">EN 14179</div>
+                        <h4 class="text-xs font-bold uppercase text-gray-400 mb-6 tracking-wider text-center">Цикл тестирования HST</h4>
+                        
+                        <div class="relative h-48 border-l-2 border-b-2 border-gray-300 ml-4 flex items-end">
+                            <svg class="absolute inset-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <path d="M0,100 L20,20 L70,20 L90,100" fill="none" stroke="#ef4444" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+                                <line x1="0" y1="20" x2="100" y2="20" stroke="#9ca3af" stroke-width="0.5" stroke-dasharray="2"/>
+                                <text x="25" y="15" class="text-[8px] fill-red-600 font-bold">290°C</text>
+                            </svg>
+                            
+                            <div class="w-1/5 text-center text-[10px] text-gray-400 -mb-6">Нагрев</div>
+                            <div class="w-3/5 text-center text-[10px] text-red-600 font-bold -mb-6 border-t border-red-200 pt-1">Выдержка 4-8 часов (Фаза разрушения NiS)</div>
+                            <div class="w-1/5 text-center text-[10px] text-gray-400 -mb-6">Охлаждение</div>
+                        </div>
+
+                        <div class="mt-10 p-3 bg-green-50 rounded flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-green-500 mt-1"></i>
+                            <p class="text-xs text-green-800 leading-tight">
+                                Если стекло не взорвалось в камере при 290°C, значит в нем нет активных примесей. Риск спонтанного разрушения снижается до <b>0.01%</b>.
+                            </p>
                         </div>
                     </div>
-                    <p class="text-center text-xs text-gray-400 mt-2">Пример разрушения стекла при HST-тесте</p>
                 </div>
             </div>
         </div>
